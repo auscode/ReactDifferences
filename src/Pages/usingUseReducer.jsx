@@ -1,14 +1,14 @@
 import { useReducer, useState } from 'react';
+const initialState = {
+  title: '',
+  description: '',
+  price: '',
+  category: '',
+};
+
 export default function () {
   const [product, dispatch] = useReducer(reducer, initialState);
   const [data, setData] = useState(null);
-  const initialState = {
-    title: '',
-    description: '',
-    price: '',
-    category: '',
-  };
-  
   function reducer(state, action) {
     return {
       ...state,
