@@ -1,5 +1,6 @@
 import './App.css';
 import DArray from './Pages/2dArray.jsx';
+import Factorial from './Pages/factorial.jsx';
 import UsingUseReducer from './Pages/usingUseReducer';
 import UsingUseState from './Pages/usingUseState.jsx';
 
@@ -17,6 +18,8 @@ function App() {
 
 
       <DArray/>
+
+      <Factorial/>
     </>
   );
 }
