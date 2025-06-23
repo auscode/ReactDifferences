@@ -1,20 +1,20 @@
 import { useReducer, useState } from 'react';
-const initialState = {
-  title: '',
-  description: '',
-  price: '',
-  category: '',
-};
-
-function reducer(state, action) {
-  return {
-    ...state,
-    [action.name]: action.value,
-  };
-}
 export default function () {
   const [product, dispatch] = useReducer(reducer, initialState);
   const [data, setData] = useState(null);
+  const initialState = {
+    title: '',
+    description: '',
+    price: '',
+    category: '',
+  };
+  
+  function reducer(state, action) {
+    return {
+      ...state,
+      [action.name]: action.value,
+    };
+  }
   const handleformChanges = (e) => {
     dispatch({ name: e.target.name, value: e.target.value });
   };
