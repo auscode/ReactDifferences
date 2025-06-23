@@ -11,7 +11,7 @@ function App() {
       <br />
       <br />
       <br />
-      <p>by using the usestate</p>
+      <p>by using the useReducer</p>
       <UsingUseReducer />
     </>
   );
